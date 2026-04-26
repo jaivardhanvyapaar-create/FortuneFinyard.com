@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Finyard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0fdf4;
+      color: #064e3b;
+    }
+
+    header {
+      background: linear-gradient(90deg, #065f46, #10b981);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 55px;
+      width: auto;
+    }
+
+    .logo-text h1 {
+      margin: 0;
+      font-size: 22px;
+      color: white;
+    }
+
+    .logo-text p {
+      margin: 0;
+      font-size: 12px;
+      color: #d1fae5;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 100px 40px;
+      text-align: center;
+      background: linear-gradient(to right, #d1fae5, #ecfdf5);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      color: #065f46;
+    }
+
+    .section {
+      padding: 60px 40px;
+    }
+
+    .section h2 {
+      color: #047857;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #047857;
+    }
+
+    footer {
+      background: #065f46;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+      color: #d1fae5;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #10b981;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #059669;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #10b981;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
+
+    form button:hover {
+      background: #059669;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .contact-info a {
+      color: #047857;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Fortune Finyard Logo">
+    <div class="logo-text">
+      <h1>Fortune Finyard</h1>
+      <p>Invest | Secure | Grow</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Your Trusted Financial Distributor</h2>
+  <p>Building Wealth. Securing Futures.</p>
+  <a href="#contact" class="btn">Get Consultation</a>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>Fortune Finyard is a professional financial distributor dedicated to helping clients achieve financial stability and growth. We specialize in investment planning, wealth management, and retirement strategies.</p>
+</section>
+
+<section id="blog" class="section">
+  <h2>Latest Insights</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Investment Strategies 2026</h3>
+      <p>Discover the top investment trends for growing your portfolio.</p>
+    </div>
+    <div class="card">
+      <h3>Retirement Planning</h3>
+      <p>How to prepare financially for a secure retirement.</p>
+    </div>
+    <div class="card">
+      <h3>Wealth Management Tips</h3>
+      <p>Maximize your financial growth with expert advice.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p>Email: 
+      <a href="mailto:fortunefinyard@gmail.com">fortunefinyard@gmail.com</a> | 
+      <a href="mailto:hr@fortunefinyard.com">hr@fortunefinyard.com</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Fortune Finyard</strong></p>
+  <p>P-142, Oxytown Co-operative Society,<br>
+  Shibrampur Ho-Chi-Minh Sarani,<br>
+  Kolkata, West Bengal - 700061</p>
+  <p>Email: fortunefinyard@gmail.com | hr@fortunefinyard.com</p>
+  <p>© 2026 Fortune Finyard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
